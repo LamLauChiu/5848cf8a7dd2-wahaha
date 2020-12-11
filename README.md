@@ -1,6 +1,10 @@
 # 5848cf8a7dd2-wahaha
 
 #
+
+sudo yum install git
+
+#
 Q1.​ Access​ Log​ analytics
 #
 1. Count​ the total​ number​ ​of HTTP​ requests​ recorded​ by​ this​ access​ logfile
