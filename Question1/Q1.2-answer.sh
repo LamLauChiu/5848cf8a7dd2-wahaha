@@ -41,4 +41,18 @@ date_to="["`date -d"2019-06-19 23:59:59" '+%d/%b/%Y:%H:%M:%S'`
 ###
 
 # To show hosts only
-cat ./access.log |awk -v sd="$date_from=" -v ed="$date_to" '$4>='sd' && $4<'ed'' | grep HTTP | awk '{print$1}' | sort | uniq -c | sort -nr | head -10 | awk '{print$2}' > hosts.txt 
+cat ./access.log |awk -v sd="$date_from=" -v ed="$date_to" '$4>='sd' && $4<'ed'' | grep HTTP | awk '{print$1}' | sort | uniq -c | sort -nr | head -10 | awk '{print$2}' > top_10_hosts.txt 
+
+# Answer:
+###  
+#     1.222.44.52
+#     118.24.71.239
+#     119.29.129.76
+#     148.251.244.137
+#     95.216.38.186
+#     136.243.70.151
+#     213.239.216.194
+#     5.9.71.213
+#     5.189.159.208
+#     5.9.108.254
+###
