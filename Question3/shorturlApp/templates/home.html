@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1>Short Url Generator:</h1>
+    <form method="POST" >
+        <input type="url" name="url">
+        <input type="submit" value="create">
+    </form>
+
+    <h1>List of Existing Url:</h1>
+    {% for row in entries %}
+      <ul>
+        <li>
+          <p>ID: {{row.id}}</p>
+          <p>URL: {{row.url}}</p>
+          <p>ShortUrl: {{row.shorturl}}</p>
+        </li>
+      </ul>
+    {% endfor %}
+  </body>
+</html>
