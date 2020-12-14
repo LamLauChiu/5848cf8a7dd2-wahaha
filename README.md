@@ -2,7 +2,6 @@
 
 #
 
-sudo yum install git
 
 #
 Q1.​ Access​ Log​ analytics
