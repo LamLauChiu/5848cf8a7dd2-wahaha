@@ -145,10 +145,10 @@ Got to Question 3:
 #
 
 Test Local run app:
+```python app.py```
 #
 
 
-```python app.py```
 Output:
 
 Local Test ShortUrl Function:
