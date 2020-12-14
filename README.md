@@ -255,6 +255,23 @@ Testing ShortUrl successful redirect case:
 ![alt text](./src/images/Q3-screencap-21.png)
 
 #
+Rolling Updates Auto Scaling 
+# 
+```
+aws cloudformation update-stack \
+--stack-name reflectoring-shorturl-service \
+--template-body file://auto-scaling.yml \
+--parameters \
+      ParameterKey=StackName,ParameterValue=reflectoring-shorturl-network \
+      ParameterKey=ServiceName,ParameterValue=reflectoring-shorturl \
+      ParameterKey=ImageUrl,ParameterValue=public.ecr.aws/s4q3b8r4/shorturl-app:latest \
+      ParameterKey=ContainerPort,ParameterValue=8080 \
+      ParameterKey=HealthCheckPath,ParameterValue=/home \
+      ParameterKey=HealthCheckIntervalSeconds,ParameterValue=90
+```
+
+
+#
 Deleting the Stacks after all finished
 #
 When we’re done, we can delete the stacks:
@@ -270,8 +287,6 @@ Wait a bit until the service stack has reached the status DELETE_COMPLETE before
 aws cloudformation delete-stack \
   --stack-name reflectoring-shorturl-network
 ```
-
-
 
 #
 
