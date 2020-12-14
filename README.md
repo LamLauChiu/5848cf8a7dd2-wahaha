@@ -131,6 +131,10 @@ Implement​ a simple​ bit.ly​ like​ service,​ name​ the following​ 
 prerequisite:
 
 Setup local environemt on macOS or Linux:
+
+Got to Question 3:
+```cd /5848cf8a7dd2-wahaha/Question3/shorturlApp/```
+
 - Creating a virtual environment:  \
 ```python3 -m venv virtualEnvironment```
 - Activating a virtual environment: \
@@ -143,7 +147,6 @@ Setup local environemt on macOS or Linux:
 Test Local run app:
 #
 
-```cd /5848cf8a7dd2-wahaha/Question3/shorturlApp/```
 
 ```python app.py```
 Output:
